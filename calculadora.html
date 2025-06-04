@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculadora en la misma página</title>
+    <link rel="stylesheet" href="calculadora.css" />
+    <script src="calculadora.js" defer></script>
+  </head>
+  <body>
+    <h1>Calculadora</h1>
+    <form id="formulario" action="#" method="">
+      <!--primer campo numerico-->
+      <!--label es una etiqueta que se usa con for=""-->
+      <label for="num1">Introduce num 1: </label>
+      <input type="number" id="num1" name="num1" /><br />
+      <!--operaciones-->
+      <label for="operacion">Operación: </label>
+      <select id="operacion">
+        <option value="SUMA">SUMA</option>
+        <option value="RESTA">RESTA</option>
+        <option value="MULTIPLICA">MULTIPLICA</option>
+        <option value="DIVIDE">DIVIDE</option></select
+      ><br />
+      <!--segundo campo numerico-->
+      <label for="num2">Introduce num 2: </label>
+      <input type="number" id="num2" name="num2" /><br />
+      <button type="submit" id="enviar">Calcular</button>
+    </form>
+    <!--resultado-->
+    <h2>Resultado:</h2>
+    <div id="resultado"></div>
+  </body>
+</html>

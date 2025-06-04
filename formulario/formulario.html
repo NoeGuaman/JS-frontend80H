@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario Básico</title>
+    <script src="formulario.js" defer></script>
+  </head>
+  <body>
+    <h1>Formulario de Registro</h1>
+    <form id="formulario" method="get">
+      <label for="nombre">Nombre:</label><br />
+      <input type="text" id="nombre" name="nombre" /><br />
+      <div id="error-nombre" style="color: red"></div>
+      <br />
+
+      <label for="apellido">Apellido:</label><br />
+      <input type="text" id="apellido" name="apellido" /><br />
+      <div id="error-apellido" style="color: red"></div>
+      <br />
+
+      <label for="telefono">Teléfono:</label><br />
+      <input type="tel" id="telefono" name="telefono" /><br />
+      <div id="error-telefono" style="color: red"></div>
+      <br />
+
+      <label for="correo">Correo electrónico:</label><br />
+      <input type="email" id="correo" name="correo" /><br />
+      <div id="error-correo" style="color: red"></div>
+      <br />
+
+      <label for="contrasena">Contraseña:</label><br />
+      <input type="password" id="contrasena" name="contrasena" /><br />
+      <div id="error-contrasena" style="color: red"></div>
+      <br />
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
